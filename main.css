@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,400&display=swap');
+
+:root{
+    --poppins-font:'Poppins',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--poppins-font);
+}
+.back-cover{
+
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg,rgba(206, 30, 30, 0.877),purple); 
+    box-sizing: border-box;
+    padding: 4% 6%;
+}
+
+.main-body{
+    max-height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border-radius:0.2cm;
+    box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.app-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-name{
+    color: aliceblue;
+    font-size: 0.6cm;
+    text-align: center;
+}
+.header-name span{
+    color: red;
+}
+.head-searcher{
+    margin: 20px 0;
+    display: flex;
+    align-self: center;
+    min-width: 40px;
+    width: 400px;
+    border:1px solid rgb(59, 56, 56);
+    border-radius: 1cm;
+    position: relative;
+}
+
+.inp-search{
+    width: 360px;
+    min-width: 20px;
+    background: none;
+    font-size: 0.4cm;
+    padding: 7px;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    cursor: text;
+}
+
+.btn-search{
+    outline: none;
+    background: none;
+    border: none;
+    color: red;
+    cursor:pointer;
+    font-size: 17px;
+    
+}
+
+.search-list{
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px 0 rgba(238, 122, 122, 0.2), 0 2px 8px 0 rgba(238, 122, 122, 0.19);
+    background-color: black;
+    top: calc(100% + 0.3cm);
+}
+
+.search-list::-webkit-scrollbar{
+    width: 5px;
+}
+.search-list::-webkit-scrollbar-thumb{
+    background-color: rgb(238, 40, 40);
+    border-radius: 0.15cm;
+}
+.search-list-items{
+display: flex;
+transition: background-color 0.25s;
+margin-top: 0.2cm;
+}
+
+.search-list-items:hover{
+    background-color: rgba(95, 158, 160,0.7);
+}
+
+
+.search-name{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    margin-left: 0.5cm;
+    align-self:center;
+}
+
+.search-img{
+    width: 40px;
+}
+.main-data{
+    margin: 15px 0;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img  img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.app-body-tabs-head{
+border-bottom: 2px solid rgb(59, 56, 56); 
+padding: 10px 0;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+outline: none;
+}
+
+.app-body-tabs-body{
+    color: aliceblue;
+}
+.tab-body-single{
+    height: 320px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.tab-body-single::-webkit-scrollbar{
+    width: 5px;
+}
+.tab-body-single::-webkit-scrollbar-thumb{
+    background-color: rgb(238, 40, 40);
+    
+    border-radius: 0.15cm;
+}
+.data-content{
+    width: 100%;
+}
+.hero-name{
+    color: rgb(161, 224, 235);
+    font-size: x-large;
+    letter-spacing: 0.15cm;
+    margin-top: 20px;
+}
+
+.app-body-tabs-head button{
+    outline: none;
+    background: none;
+    color: aliceblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.app-body-tabs-head button span{
+    letter-spacing: 0.06cm;
+    font-size: 0.37cm;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.tab-head-single{
+    outline: none;
+}
+.tab-head-single:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.active-tab{
+    border-bottom: 2px solid red;
+}
+.no-show-tab{
+    display: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.content-powerstats{
+    
+}
+
+.content-powerstats>li{
+    margin-top: 0.4cm;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    /* outline: none; */
+}
+
+.content-powerstats li>div>i{
+    color: rgb(163, 20, 20);
+}
+
+.content-powerstats li > span {
+    color: yellow;
+    font-weight: 600;
+}
+
+.content-powerstats >li>div>span{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.02cm;
+    margin-left: 0.5cm;
+    color: bisque;
+    font-size: medium;
+}
+
+.content-biography>li{
+    margin-top: 0.4cm;
+    display: flex;
+    padding: 5px;
+}
+.content-biography>li>span:first-child{
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.02cm;
+    color: darkgrey;
+    font-size: medium;
+}
+
+.content-biography>li>span:last-child{
+    text-transform: capitalize;
+    font-weight: 550;
+    letter-spacing: 0.02cm;
+    font-size: medium;
+    margin-left: 0.3cm;
+}
+
+.content-biography{
+    /* display: none; */
+}
+
+.content-appearance>li{
+    margin-top: 0.4cm;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    /* outline: none; */
+}
+
+.content-appearance>li>span>i{
+    color: yellow;
+}
+
+.content-appearance>li>span:first-child{
+    text-transform: uppercase;
+    font-weight: 550;
+    letter-spacing: 0.04cm;
+    font-size: medium;
+}
+
+.content-appearance>li>span>span{
+    margin-left: 0.5cm;
+}
+
+.content-appearance>li>span:last-child{
+    font-size: 14px;
+    background-color: brown;
+    padding: 4px;
+    border-radius: 0.2cm;
+    text-transform: capitalize;
+}
+
+.content-appearance{
+    /* display: none; */
+}
+
+.content-connections> li>span{
+    display: flex;
+    flex-direction: column;
+    
+}
+.content-connections> li>span:first-child{
+    position: relative;
+    margin-left: 40px;
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 0.7cm;
+}
+.content-connections >li>span:first-child::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    height: 3px;
+    width: 30px;
+    background-color: yellow;
+}
+
+.content-connections>li>span:last-child{
+    margin-top: 0.2cm;
+    margin-left: 0.4cm;
+}
+
+.content-connections{
+    /* display: none; */
+}
+
+@media (min-width:600px) and (max-width:1000px){
+    .back-cover{
+        padding: 4% 8%;
+    }
+    
+}
+@media (min-width:1000px) {
+    .back-cover{
+        padding: 4% 10%;
+    }
+    .main-data{
+        display: flex;
+    }
+    .hero-name{
+        margin: 0;
+    }
+    .data-content{
+        margin-left: 0.8cm;
+    }
+    .app-header{
+        display: flex;
+        flex-direction: row;
+    }
+    .head-searcher{
+        margin: 0;
+    }
+};
+
